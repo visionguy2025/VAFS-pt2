@@ -1,0 +1,186 @@
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | CUSTOM VARIABLES | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* ROOT */
+:root {
+    /* COLOR PATTERNS */
+    --color_text: #000000; /* 000000 ffffff */
+    --color_text_staticLight: #ffffff;
+    --color_bg: #ffffff; /* ffffff 000000 */
+    --color_border: #a1a1a1; /* a1a1a1 575757 */
+    --color_theme: #f5b70c; /* f5b70c 1671e7 */
+    --color_theme_50: #f5b70c50; /* f5b70c50 1671e750 */
+
+    /* MARGIN VALUES */
+    --margin_horizontalCenter: 0 auto;
+    --margin_iconSpace: 0px 10px 0px 0px;
+
+    /* PADDING VALUES */
+    --padding_inputs: 5px 10px;
+    --padding_sections: 100px 0;
+    --padding_container: 10px;
+    --padding_button: 5px 10px;
+
+    /* TRANSITIONS DURATIONS */
+    --transition_quick: 0.1s;
+    --transition_fast: 0.2s;
+    --transition_middle: 0.35s;
+    --transition_slow: 0.5s;
+    --transition_heavy: 1s;
+
+    /* TRANSITIONS TIMING FUNCTIONS */
+    --transition_linear: linear;
+    --transition_easeIn: ease-in;
+    --transition_easeOut: ease-out;
+    --transition_easeInOut: ease-in-out;
+    --transition_inBack: cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    --transition_inOutBack: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    --transition_elastic: linear(0 0%, 0.22 2.1%, 0.86 6.5%, 1.11 8.6%, 1.3 10.7%, 1.35 11.8%, 1.37 12.9%, 1.37 13.7%, 1.36 14.5%, 1.32 16.2%, 1.03 21.8%, 0.94 24%, 0.89 25.9%, 0.88 26.85%, 0.87 27.8%, 0.87 29.25%, 0.88 30.7%, 0.91 32.4%, 0.98 36.4%, 1.01 38.3%, 1.04 40.5%, 1.05 42.7%, 1.05 44.1%, 1.04 45.7%, 1 53.3%, 0.99 55.4%, 0.98 57.5%, 0.99 60.7%, 1 68.1%, 1.01 72.2%, 1 86.7%, 1 100%);
+    --transition_bounce: linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | CUSTOM VARIABLES | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | ZEROING DEFAULTS | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* ALL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* ALL BUTTONS */
+button {
+    cursor: pointer;
+}
+/* EFFECTS */
+::after {}
+::selection {
+  color: #ffffff;
+  background-color: #000000;
+}
+:focus {}
+/* SCROLL BAR */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color_theme) var(--color_theme_50);
+}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | ZEROING DEFAULTS | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | CLASS TEMPLATES | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* CONTAINERS */
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--padding_sections);
+}
+.sectionContainer {
+  width: min(1160px, 100vw);
+  margin: var(--margin_horizontalCenter);
+  padding: var(--padding_container);
+}
+.container {}
+/* BUTTONS */
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: var(--padding_button);
+  text-transform: capitalize;
+}
+.btn-open {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.btn-primary {}
+.btn-secondary {}
+/* DROPDOWN */
+.dropdown {}
+/* POP UP MODAL */
+.modal {}
+/* BUTTON HOVER EFFECTS */
+.btn:hover {}
+.btn-primary:hover {}
+.btn-secondary:hover {}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | CLASS TEMPLATES | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | GOOGLE FONTS | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* BITCOUNT */
+.bitcount-prop-single-ink-500 {
+  font-family: "Bitcount Prop Single Ink", system-ui, serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+/* BUNGEE */
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* COOKIE */
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* JOSEFIN SANS */
+.josefin-sans-100 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+/* MONOTON */
+.monoton-regular {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* MONTSERRAT */
+.montserrat-900 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+/* ROBOTO */
+.roboto-500 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | GOOGLE FONTS | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | ANIMATIONS | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* UNTITLED1 */
+@keyframes untitled1 {
+    0% {}
+    100% {}
+}
+/* UNTITLED2 */
+@keyframes untitled2 {
+    0% {}
+    100% {}
+}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | ANIMATIONS | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */

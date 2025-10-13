@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- JS -->
+    </head>
+    <body>
+        <!-- ========================================# SPECIAL | STARTS ▼ -->
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb" id="breadcrumb">
+            <!-- JS -->
+        </div>
+        <!-- TO TOP BUTTON WITH LINKS FOR SECTIONS -->
+        <button class="toTopBtn_outer" id="toTopBtn">
+            <!-- JS -->
+        </button>
+        <!-- ========================================# SPECIAL | ENDS ▲ -->
+
+        <!-- -------------------------------------------------------------------------------- -->
+        
+        <!-- ========================================# HEADER | STARTS ▼ -->
+        <header id="header" class="header">
+            <!-- JS -->
+        </header>
+        <!-- ========================================# HEADER | ENDS ▲ -->
+
+        <!-- -------------------------------------------------------------------------------- -->
+
+        <!-- ========================================# MAIN | STARTS ▼ -->
+        <main id="main" class="main">
+            <!-- SECTION 1 | LIBRARY -->
+            <section id="librarySection" class="librarySection section">
+                <article class="libraryContainer sectionContainer">
+                    contents:
+                    - will contain watch later, watched movie and series, and kind of similar stuff
+                    effects:
+                    - same effects
+                    about:
+                    - one section but contents will change on switching side bar menu, articles will be there for showing watch later cards, watched cards
+                </article>
+            </section>
+        </main>
+        <!-- ========================================# MAIN | ENDS ▲ -->
+
+        <!-- -------------------------------------------------------------------------------- -->
+
+        <!-- ========================================# FOOTER | STARTS ▼ -->
+        <footer id="footer" class="footer">
+            <!-- JS -->
+        </footer>
+        <!-- ========================================# FOOTER | ENDS ▲ -->
+
+        <!-- -------------------------------------------------------------------------------- -->
+
+        <!-- ========================================# JAVASCRIPT | STARTS ▼ -->
+        <!-- UTILITIES -->
+        <script src="../utilities/setPageHead.js"></script>
+        <script src="../utilities/setPageTitle.js"></script>
+
+        <!-- COMPONENTS -->
+        <script src="../components/Header.js"></script>
+        <script src="../components/Footer.js"></script>
+        <script src="../components/ToTopBtn.js"></script>
+        <script src="../components/Breadcrumb.js"></script>
+
+        <!-- FEATURES -->
+        <script src="../features/language_bar.js"></script>
+        <script src="../features/lightmode.js"></script>
+
+        <!-- PAGE INITIALS -->
+        <script>
+            // SET UP HEAD CONTENTS
+            headContent('..')
+            setPageTitle('Library')
+            // BRING COMMON BODY COMPONENTS
+            Header(false)
+            Footer(false)
+            ToTop(true, 'library')
+            Breadcrumb(false, 'library')
+            // EVENTS
+        </script>
+        <!-- ========================================# JAVASCRIPT | ENDS ▲ -->
+    </body>
+</html>

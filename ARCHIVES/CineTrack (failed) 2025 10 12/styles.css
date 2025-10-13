@@ -1,0 +1,203 @@
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | SPECIAL | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* TO TOP BUTTON */
+.toTopBtn_outer {
+    display: none;
+}
+.toTopBtn_outer > a {}
+.toTopBtn_inner {}
+.toTopBtn_inner > a {}
+.toTopBtn_inner > a > i {}
+/* BREADCRUMB */
+.breadcrumb {
+    display: none;
+}
+.breadcrumb > a {}
+.breadcrumb > span {}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | SPECIAL | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | HEADER | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* HEADER */
+.header {
+    display: none;
+}
+/* HEADER TOPSIDE */
+.headerTop {}
+/* HEADER TOPSIDE LIBRARY */
+.headerTop_userlibrary {}
+.headerTop_userlibrary_btn {}
+.headerTop_userlibrary_btn a {}
+/* HEADER TOPSIDE USERPANEL */
+.headerTop_userpanel {}
+.headerTop_userpanel_btn {}
+.headerTop_userpanel_btn a {}
+/* HEADER MAIN */
+.headerMain {}
+/* HEADER MAIN LOGO */
+.headerMain_logo {
+    width: auto;
+    height: 40px;
+}
+.headerMain_logo > img {
+    filter: hue-rotate(150deg);
+    height: 100%;
+}
+#dropdown__logo {}
+.dropdown_logo_light {}
+.dropdown_logo_light > div {}
+.dropdown_logo_light > div > div {}
+.dropdown_logo_light > div > div > i {}
+.dropdown_logo_lang {}
+.dropdown_logo_lang > div {}
+.dropdown_logo_lang img {}
+.dropdown_logo_lang span {}
+.dropdown_logo_lang > ul {}
+.dropdown_logo_lang > ul > li {}
+/* HEADER MAIN NAVBAR */
+.headerMain_navbar {}
+.headerMain_navbar > li {}
+.headerMain_navbar > li > a {}
+.headerMain_navbar > li > a > i {}
+#nav__tvs {}
+#dropdown__tvs {}
+#nav__mov {}
+#dropdown__mov {}
+.dropdown_list {}
+.dropdown_list > h3 {}
+.dropdown_list > li {}
+.dropdown_list > li > a {}
+/* HEADER MAIN BUTTONS */
+.headerMain_buttons {}
+.headerMain_buttons > form > input {
+    /* visibility: hidden; */
+}
+.headerMain_buttons > form > a {}
+.headerMain_buttons > form > a > button {}
+.headerMain_buttons > form > a > button > i {}
+.headerMain_buttons_btnMobile {
+    /* display: none; */
+}
+.btnMobile__bars {}
+#btnMobile_bar_top {}
+#btnMobile_bar_middle {}
+#btnMobile_bar_bottom {}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | HEADER | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | MAIN | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* MAIN */
+.main {
+    width: 100%;
+}
+/* SECTION 1 | HOME */
+.homeSection {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - (30px + 50px));
+    overflow: hidden;
+}
+.homeSection > video {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.homeContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer > h1 {
+    font-size: 15rem;
+    text-align: center;
+    color: var(--color_text_staticLight);
+    text-shadow: 0 0 10px var(--color_theme);
+    opacity: 50%;
+}
+/* SECTION 2 | MOVIE CATEGORIES */
+.movCategorySection {}
+.movCategoryContainer {}
+/* SECTION 3 | TV-SERIES CATEGORIES */
+.tvsCategorySection {}
+.tvsCategoryContainer {}
+/* SECTION 4 | TOP RATED MOVIE & TV-SERIES */
+.topRatedSection {}
+.topRatedContainer {}
+/* SECTION 5 | POPULAR SHOWS CAROUSEL */
+.popularSection {}
+.popularContainer {}
+/* SECTION 6 | MOVIE GENRES */
+.movieGenreSection {}
+.movieGenreContainer {}
+/* SECTION 7 | UPCOMING */
+.upcomingSection {}
+.upcomingContainer {}
+/* SECTION 8 | SERIES GENRES */
+.seriesGenreSection {}
+.seriesGenreContainer {}
+/* SECTION 9 | GALLERY */
+.gallerySection {}
+.galleryContainer {}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | MAIN | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */
+
+/* --------------------------------------------------------------------------------- */
+
+/* START ■■■■■■■■■■■■■■■■■■■■ ↓ | FOOTER | ↓ ■■■■■■■■■■■■■■■■■■■■ START */
+/* FOOTER */
+.footer {
+    display: none;
+}
+/* FOOTER TOPSIDE */
+.footerTop {}
+/* FOOTER TOPSIDE COLUMNS */
+.footerTop_columns {}
+.ftcol_1 {}
+.ftcol_2 {}
+.ftcol_3 {}
+.ftcol_4 {}
+/* FOOTER TOPSIDE COLUMN CONTENTS */
+.footerTop_columns_logo {}
+.footerTop_columns_sum {}
+.footerTop_columns_buttons {}
+#modal__privacy {
+    display: none;
+}
+#modal__privacy > button {}
+#modal__privacy > button > i {}
+#modal__privacy > article {}
+#modal__privacy > article h2 {}
+#modal__privacy > article h3 {}
+#modal__privacy > article p {}
+#modal__terms {
+    display: none;
+}
+#modal__terms > button {}
+#modal__terms > button > i {}
+#modal__terms > article {}
+#modal__terms > article h2 {}
+#modal__terms > article h3 {}
+#modal__terms > article p {}
+.footerTop_columns > h3 {}
+.footerTop_columns > ul {}
+.footerTop_columns > ul > li {}
+.footerTop_columns > ul > li > a {}
+.footerTop_columns > ul > li > i {}
+.footerTop_columns_form {}
+.footerTop_columns_form > form input {}
+.footerTop_columns_form > form button {}
+/* FOOTER BOTTOM */
+.footerBottom {}
+.footerBottom > span {}
+.footerBottom > span:first-of-type {}
+.footerBottom > span:last-of-type {}
+.footerBottom > span > a {}
+.footerBottom > span > i {}
+/*  END  ■■■■■■■■■■■■■■■■■■■■ ↑ | FOOTER | ↑ ■■■■■■■■■■■■■■■■■■■■  END  */

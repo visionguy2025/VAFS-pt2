@@ -1,0 +1,43 @@
+/* ZEROING DEFAULTS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.text {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50rem;
+    font-weight: 900;
+    font-family: sans-serif;
+
+    color: #ffffff99;
+    background-color: #000000;
+    mix-blend-mode: darken;
+    backdrop-filter: blur(0px);
+}
+
+#video {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
