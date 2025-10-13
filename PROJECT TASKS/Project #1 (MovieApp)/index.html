@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header id="header" class="header">
+            <!-- HEADER TOPSIDE -->
+            <section class="headerTop">
+                <!-- USERNAME IF THERE IS LOGGED USER ELSE EMPTY -->
+                <div class="headerTop_username">
+                    <!-- <img src="./#" alt="avatar">
+                    <span>username123</span> -->
+                </div>
+                <!-- USERPANEL BUTTONS -->
+                <div class="headerTop_buttons">
+                    <!-- LOGIN BUTTON IF GUEST -->
+                    <button>Sign in / Register</button>
+                    <!-- CUSTOM BUTTONS IF THERE IS ACTIVE LOGGED USER -->
+                    <!-- <button>Watch later</button>
+                    <button>Watched</button>
+                    <button>Favorites</button>
+                    <button>Log out</button> -->
+                </div>
+            </section>
+            <!-- HEADER MAIN -->
+            <section class="headerMain">
+                <!-- LOGO -->
+                <a href="./index.html" class="headerMain_logo">
+                    <img src="./asset library/logo/logo_ai.png" alt="logo">
+                </a>
+                <!-- NAVBAR -->
+                <nav class="headerMain_navbar">
+                    <li><a href="./index.html">Home</a></li>
+                    <li id="explore">
+                        <a href="./pages/explore.html" id="explore_menu">
+                            Explore
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown" id="dropdown">
+                            <div>
+                                <ul>
+                                    <h3>MOVIES</h3>
+                                    <li><a href="./pages/explore.html">All Movies</a></li>
+                                    <li><a href="./pages/explore.html">Popular Movies</a></li>
+                                    <li><a href="./pages/explore.html">Top Rated Movies</a></li>
+                                </ul>
+                                <ul>
+                                    <h3>TV-SERIES</h3>
+                                    <li><a href="./pages/explore.html">All TV-Series</a></li>
+                                    <li><a href="./pages/explore.html">Popular TV-Series</a></li>
+                                    <li><a href="./pages/explore.html">Top Rated TV-Series</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <h3>MORE</h3>
+                                    <li><a href="./pages/explore.html">Upcoming Movies</a></li>
+                                    <li><a href="./pages/explore.html">Upcoming Series</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </nav>
+                <!-- SEARCH -->
+                <div class="headerMain_search">
+                    <input type="search" placeholder="Search" class="search_input">
+                    <a href="./pages/explore.html" id="searchBtn"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                </div>
+            </section>
+        </header>
+        <!-- SCRIPTS -->
+        <script src="./scripts.js"></script>
+    </body>
+</html>
