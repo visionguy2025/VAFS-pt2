@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- META DATA -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+
+        <!-- TITLE OF THE PAGE -->
+        <title> CineTrack | Home </title>
+
+        <!-- TAB ICON OF THE PAGE -->
+        <link rel="shortcut icon" href="./asset library/logo/logo_ai.png" type="image/x-icon">
+
+        <!-- GOOGLE FONTS CDN | JOSEFIN SANS, MONOTON -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Monoton&display=swap" rel="stylesheet">
+
+        <!-- FONT AWESOME CDN VERSION 7.0.1 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+        <!-- CUSTOM STYLE SHEETS -->
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
+        <!-- TO TOP -->
+        <div id="toTop">
+            <div id="toTop__links">
+                <!-- <a href="#">Section1</a>
+                <a href="#">Section2</a>
+                <a href="#">Section3</a>
+                <a href="#">Section4</a>
+                <a href="#">Section5</a>
+                <a href="#">Section6</a>
+                <a href="#">Section7</a>
+                <a href="#">Section8</a>
+                <a href="#">Section9</a> -->
+            </div>
+            <button id="toTop__core">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+
         <!-- HEADER -->
-        <header id="header" class="header">
+        <header id="header" class="header josefin-sans-500">
             <!-- HEADER TOPSIDE -->
             <section class="headerTop">
                 <!-- USERNAME IF THERE IS LOGGED USER ELSE EMPTY -->
                 <div class="headerTop_username">
-                    <!-- <img src="./#" alt="avatar">
+                    <!-- <img src="./asset library/avatars/1760353706613-0199dd41-c50c-7830-a634-f34db88e75ee.png" alt="avatar">
                     <span>username123</span> -->
                 </div>
+
                 <!-- USERPANEL BUTTONS -->
                 <div class="headerTop_buttons">
                     <!-- LOGIN BUTTON IF GUEST -->
-                    <button>Sign in / Register</button>
+                    <a href="./pages/login">Sign in / Register</a>
                     <!-- CUSTOM BUTTONS IF THERE IS ACTIVE LOGGED USER -->
-                    <!-- <button>Watch later</button>
-                    <button>Watched</button>
-                    <button>Favorites</button>
-                    <button>Log out</button> -->
+                    <!-- <a href="./pages/dashboard.html">Watch later</a>
+                    <a href="./pages/dashboard.html">Watched</a>
+                    <a href="./pages/dashboard.html">Favorites</a>
+                    <a href="./pages/dashboard.html">Log out</a> -->
                 </div>
             </section>
+
             <!-- HEADER MAIN -->
             <section class="headerMain">
                 <!-- LOGO -->
                 <a href="./index.html" class="headerMain_logo">
                     <img src="./asset library/logo/logo_ai.png" alt="logo">
                 </a>
+
                 <!-- NAVBAR -->
                 <nav class="headerMain_navbar">
                     <li><a href="./index.html">Home</a></li>
@@ -69,13 +105,115 @@
                     <li><a href="./pages/about.html">About</a></li>
                     <li><a href="./pages/contact.html">Contact</a></li>
                 </nav>
+
                 <!-- SEARCH -->
                 <div class="headerMain_search">
-                    <input type="search" placeholder="Search" class="search_input">
-                    <a href="./pages/explore.html" id="searchBtn"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                    <form action="./pages/explore.html">
+                        <input type="search" placeholder="Search" class="search_input" name="search">
+                        <button type="submit" id="searchBtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
                 </div>
             </section>
         </header>
+
+        <!-- MAIN -->
+        <main id="main" class="main josefin-sans-500">
+            <!-- SECTION 1 -->
+            <section class="section1">
+                <video src="./asset library/videos/Dune Part Two.mp4" id="section1_video" preload="metadata" muted></video>
+                <div id="section1_greeting">
+                    <span class="monoton-regular" style="display: none;">Welcome</span>
+                    <span class="monoton-regular" style="display: none;">To</span>
+                    <span class="monoton-regular" style="display: none;">CineTrack</span>
+                </div>
+            </section>
+
+            <!-- SECTION 2 -->
+            <section class="section2">
+                <div class="section2_carousel">
+                    <div class="section2_carousel-card">
+                        Action
+                    </div>
+                    <div class="section2_carousel-card">
+                        Adventure
+                    </div>
+                    <div class="section2_carousel-card">
+                        Animation
+                    </div>
+                    <div class="section2_carousel-card">
+                        Biography
+                    </div>
+                    <div class="section2_carousel-card">
+                        Documentary
+                    </div>
+                    <div class="section2_carousel-card">
+                        Drama
+                    </div>
+
+                    <div class="section2_carousel-buttons">
+                        <button id="section2_carouselBtn_prev" onclick="sect2carousel(this.id)"> <i class="fa-solid fa-chevron-left"></i> </button>
+                        <button id="section2_carouselBtn_next" onclick="sect2carousel(this.id)"> <i class="fa-solid fa-chevron-right"></i> </button>
+                    </div>
+                </div>
+                <div class="section2_details">
+                    <h2>MOVIE WITH GENRES</h2>
+                    <p>
+                        about active carousel card genre
+                    </p>
+                    <a href="./pages/explore.html">See Movies</a>
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
+            <section class="section3">
+                <div>
+                    <h2>TV-SERIES WITH GENRES</h2>
+                    <p>
+                        about active carousel card genre
+                    </p>
+                    <a href="./pages/explore.html">See Series</a>
+                </div>
+                <div>
+                    simple single visible card carousel for genres
+                </div>
+            </section>
+
+            <!-- SECTION 4 -->
+            <section class="section4">
+                thin long banner for rating websites
+            </section>
+
+            <!-- SECTION 5 -->
+            <section class="section5"></section>
+
+            <!-- SECTION 6 -->
+            <section class="section6"></section>
+
+            <!-- SECTION 7 -->
+            <section class="section7">
+                carousel shaped -=E=- for any
+            </section>
+
+            <!-- SECTION 8 -->
+            <section class="section8"></section>
+
+            <!-- SECTION 9 -->
+            <section class="section9">
+                auto rolling small cards like a band from right to left, smoothly
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer id="footer" class="footer">
+            <!-- TOP SIDE OF BOTTOM -->
+            <section class="footerTop"></section>
+
+            <!-- BOTTOM SIDE OF FOOTER -->
+            <section class="footerBottom"></section>
+        </footer>
+
         <!-- SCRIPTS -->
         <script src="./scripts.js"></script>
     </body>
