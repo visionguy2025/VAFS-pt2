@@ -26,15 +26,15 @@
         <!-- TO TOP -->
         <div id="toTop">
             <div id="toTop__links">
-                <!-- <a href="#">Section1</a>
-                <a href="#">Section2</a>
-                <a href="#">Section3</a>
-                <a href="#">Section4</a>
-                <a href="#">Section5</a>
-                <a href="#">Section6</a>
-                <a href="#">Section7</a>
-                <a href="#">Section8</a>
-                <a href="#">Section9</a> -->
+                <a href="#section1">Section1</a>
+                <a href="#section2">Section2</a>
+                <a href="#section3">Section3</a>
+                <a href="#section4">Section4</a>
+                <a href="#section5">Section5</a>
+                <a href="#section6">Section6</a>
+                <a href="#section7">Section7</a>
+                <a href="#section8">Section8</a>
+                <a href="#section9">Section9</a>
             </div>
             <button id="toTop__core">
                 <i class="fa-solid fa-chevron-up"></i>
@@ -121,7 +121,7 @@
         <!-- MAIN -->
         <main id="main" class="main josefin-sans-500">
             <!-- SECTION 1 -->
-            <section class="section1">
+            <section id="section1" class="section1">
                 <video src="./asset library/videos/Dune Part Two.mp4" id="section1_video" preload="metadata" muted></video>
                 <div id="section1_greeting">
                     <span class="monoton-regular" style="display: none;">Welcome</span>
@@ -131,7 +131,7 @@
             </section>
 
             <!-- SECTION 2 -->
-            <section class="section2">
+            <section id="section2" class="section2">
                 <div class="section2_carousel">
                     <div class="section2_carousel-card">
                         Action
@@ -158,49 +158,103 @@
                     </div>
                 </div>
                 <div class="section2_details">
-                    <h2>MOVIE WITH GENRES</h2>
+                    <h2>
+                        MOVIE WITH GENRES
+                    </h2>
                     <p>
                         about active carousel card genre
                     </p>
-                    <a href="./pages/explore.html">See Movies</a>
+                    <a href="./pages/explore.html">
+                        See Movies
+                    </a>
                 </div>
             </section>
 
             <!-- SECTION 3 -->
-            <section class="section3">
-                <div>
+            <section id="section3" class="section3">
+                <div class="section3_topside">
                     <h2>TV-SERIES WITH GENRES</h2>
-                    <p>
-                        about active carousel card genre
-                    </p>
-                    <a href="./pages/explore.html">See Series</a>
                 </div>
-                <div>
-                    simple single visible card carousel for genres
+                <div class="section3_container">
+                    <div class="section3_container-card">
+                        <a href="./pages/explore.html?type=series&genre=adventure">
+                            Adventure
+                        </a>
+                    </div>
+                    <div class="section3_container-card">
+                        <a href="./pages/explore.html?type=series&genre=comedy">
+                            Comedy
+                        </a>
+                    </div>
+                    <div class="section3_container-card">
+                        <a href="./pages/explore.html?type=series&genre=crime">
+                            Crime
+                        </a>
+                    </div>
+                    <div class="section3_container-card">
+                        <a href="./pages/explore.html?type=series&genre=history">
+                            History
+                        </a>
+                    </div>
+                    <div class="section3_container-card">
+                        <a href="./pages/explore.html?type=series&genre=post_apocalyptic">
+                            Post-Apocalyptic
+                        </a>
+                    </div>
+                    <div class="section3_container-card">
+                        <a href="./pages/explore.html?type=series&genre=tragedy">
+                            Tragedy
+                        </a>
+                    </div>
+
+                    <button id="section3_btn_prev">
+                        ◄
+                    </button>
+                    <button id="section3_btn_next">
+                        ►
+                    </button>
                 </div>
             </section>
 
             <!-- SECTION 4 -->
-            <section class="section4">
-                thin long banner for rating websites
+            <section id="section4" class="section4">
+                <article class="section4_top">
+                    <!-- FIX CSS TOP BOTTOM OVERFLOWS ON Y -->
+                    <h2 class="section4_top-header">Popular Movies</h2>
+                    <div class="section4_top-container" >
+                        <!-- JS -->
+                    </div>
+                </article>
+                <article class="section4_bottom">
+                    <h2 class="section4_bottom-header">Popular TV-Series</h2>
+                    <div class="section4_bottom-container" >
+                        <!-- JS -->
+                    </div>
+                </article>
+            </section>
+            
+            <!-- SECTION 5 -->
+            <section id="section5" class="section5">
+                thin long banner for rating websites (IMDB, RottenTomato, ...)
+            </section>
+            
+            <!-- SECTION 6 -->
+            <section id="section6" class="section6">
+                position fixed bg
             </section>
 
-            <!-- SECTION 5 -->
-            <section class="section5"></section>
-
-            <!-- SECTION 6 -->
-            <section class="section6"></section>
-
             <!-- SECTION 7 -->
-            <section class="section7">
-                carousel shaped -=E=- for any
+            <section id="section7" class="section7">
+                about us sum with gallery
             </section>
 
             <!-- SECTION 8 -->
-            <section class="section8"></section>
+            <section id="section8" class="section8">
+                two columns for top rated movies & tv-series
+            </section>
 
             <!-- SECTION 9 -->
-            <section class="section9">
+            <section id="section9" class="section9">
                 auto rolling small cards like a band from right to left, smoothly
             </section>
         </main>
@@ -208,10 +262,34 @@
         <!-- FOOTER -->
         <footer id="footer" class="footer">
             <!-- TOP SIDE OF BOTTOM -->
-            <section class="footerTop"></section>
+            <section class="footerTop">
+                <div>
+                    img
+                    sum text
+                    social
+                </div>
+                <div>
+                    movie col
+                </div>
+                <div>
+                    tv series col
+                </div>
+                <div>
+                    language
+                    lightmode
+                    subscribe form
+                </div>
+            </section>
 
             <!-- BOTTOM SIDE OF FOOTER -->
-            <section class="footerBottom"></section>
+            <section class="footerBottom">
+                <div>
+                    copyrights text
+                </div>
+                <div>
+                    buttons privacy policy and terms of condition
+                </div>
+            </section>
         </footer>
 
         <!-- SCRIPTS -->
