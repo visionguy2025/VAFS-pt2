@@ -6,3 +6,14 @@
     list-style: none;
     text-decoration: none;
 }
+
+.container {
+    width: 100dvw;
+    height: 850dvh;
+}
+
+.box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
