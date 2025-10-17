@@ -1,3 +1,5 @@
+// "use strict";
+
 // VARIABLES
 let isLogged = false;
 let activeUser = 0;
@@ -16,25 +18,31 @@ const greetingBox = document.getElementById('section1_greeting');
 const section1video_span1 = document.querySelector('#section1_greeting > span:nth-of-type(1)');
 const section1video_span2 = document.querySelector('#section1_greeting > span:nth-of-type(2)');
 const section1video_span3 = document.querySelector('#section1_greeting > span:nth-of-type(3)');
+const isHomepage = !window.location.pathname.includes('/pages')
+let assetsDirectory = '.'
+let pagesDirectory = './pages'
 
 // LOGGED OR GUEST
 if(isLogged) {
+    isHomepage ? assetsDirectory = '.' : assetsDirectory = '..'
     document.getElementsByClassName('headerTop_username')[0].innerHTML = `
-        <img src="./asset library/avatars/1760353706613-0199dd41-c50c-7830-a634-f34db88e75ee.png" alt="avatar">
+        <img src="${assetsDirectory}/asset library/avatars/1760353706613-0199dd41-c50c-7830-a634-f34db88e75ee.png" alt="avatar">
         <span>username123</span>
     `;
+    isHomepage ? pagesDirectory = './pages' : pagesDirectory = '.'
     document.getElementsByClassName('headerTop_buttons')[0].innerHTML = `
-        <a href="./pages/dashboard.html">Watch later</a>
-        <a href="./pages/dashboard.html">Watched</a>
-        <a href="./pages/dashboard.html">Favorites</a>
-        <a href="./pages/dashboard.html">Log out</a>
+        <a href="${pagesDirectory}/dashboard.html">Watch later</a>
+        <a href="${pagesDirectory}/dashboard.html">Watched</a>
+        <a href="${pagesDirectory}/dashboard.html">Favorites</a>
+        <a href="${assetsDirectory}/index.html">Log out</a>
     `;
 } else {
     document.getElementsByClassName('headerTop_username')[0].innerHTML = `
         <span>Guest</span>
     `;
+    isHomepage ? pagesDirectory = './pages' : pagesDirectory = '.'
     document.getElementsByClassName('headerTop_buttons')[0].innerHTML = `
-        <a href="./pages/login">Sign in / Register</a>
+        <a href="${pagesDirectory}/login.html">Sign in / Register</a>
     `;
 };
 

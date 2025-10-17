@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META DATA -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- TITLE OF THE PAGE -->
+        <title> SCROLL EVENT TEST </title>
+
+        <!-- CUSTOM STYLE SHEET -->
+        <style>
+            /* ZEROING DEFAULTS */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-decoration: none;
+            }
+
+            /* CONTAINER */
+            .container {
+                position: relative;
+                width: 100%;
+                height: 400dvh;
+                background-color: #000000;
+            }
+
+            /* BOX IN THE MIDDLE OF THE CONTAINER */
+            .box {
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #ff0000;
+                /* transition: 0.25s ease-in-out; */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- BOX IN THE MIDDLE OF THE CONTAINER -->
+            <div class="box"></div>
+        </div>
+        
+        <!-- SCRIPT -->
+        <script>
+            // VARIABLES
+            const container = document.getElementsByClassName('container')[0]
+            const box = document.getElementsByClassName('box')[0]
+            let isScrolling = false
+            
+            // HANDLER FUNCTIONS
+            function calculateSizes() {
+                let containerHeight = container.getBoundingClientRect().height
+                let a = document.documentElement.scrollHeight - window.innerHeight // or -containerHeight // decreasing by 1 screen because scrollY counts on top of screen but scrollHeights includes that one, so we need to close that gap, I guess
+                let c = (window.scrollY/a)*100
+                // console.log(containerHeight)
+
+                box.style.width = c + '%'
+                box.style.height = c + '%'
+            }
+            function handleScrolling() {
+                !isScrolling ? isScrolling = true : null
+                calculateSizes()
+            }
+            function hadleScrollEnd() {
+                isScrolling ? isScrolling = false : null
+                calculateSizes()
+            }
+
+            // EVENTS
+            window.addEventListener('scroll', handleScrolling)
+            window.addEventListener('scrollend', hadleScrollEnd)
+        </script>
+    </body>
+</html>
